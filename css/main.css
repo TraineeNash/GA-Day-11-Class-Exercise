@@ -175,6 +175,30 @@ header .flex{
     margin-left: 5px;
     text-decoration: none;
 }
+.steps .grid{
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 40px;
+    gap: 50px;
+}
+.steps h3{
+    margin-top: 50px;
+    font-size: 30px;
+}
+.steps .grid img{
+    height: 150px;
+    margin-top: 70px;
+}
+.steps .grid [class^="item-"] .flex{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.steps .grid [class^="item-"] .flex h3{
+    font-size: 25px;
+    margin-bottom: 0;
+}
+.steps .grid [class^="item-"] .flex p{
+    font-size: 20px;
+}
 @media (max-width: 480px){
     .mobile_menu{
         display: block;
@@ -264,5 +288,24 @@ header .flex{
     }
     .action .content #name::before{
         content: "- ";
+    }
+    .steps .grid{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 10px;
+        gap: 0;
+    }
+    .steps .grid [class^="item-"]{
+        display: flex;
+        align-items: center;
+    }
+    .steps .grid [class^="item-"] img{
+        height: 80px;
+        margin-right: 10px;
+    }
+    .steps .grid .item-3{
+        margin-left: 10px;
+    }
+    .steps .grid .item-3 div img{
+        margin-right: 15px;
     }
 }
