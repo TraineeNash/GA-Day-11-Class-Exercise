@@ -6,7 +6,7 @@ body{
 }
 header{
     justify-content: space-between;
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    border: 2px solid rgb(136, 136, 136);
     align-items: center;
     padding: 5px 0;
 }
@@ -25,7 +25,7 @@ header .flex{
 }
 .mobile_menu{
     display: none;
-    border: 1px solid rgb(44, 41, 41, 0.3);
+    border: 1px solid rgb(136, 136, 136, 0.5);
     margin-right: 20px;
     border-radius: 5px;
     padding: 5px;
@@ -38,11 +38,32 @@ header .flex{
 }
 .hero__container{
     position: relative;
-    background-image: url('../img/hero__container\ img\ bg.jpg');
+    background-image: url('../img/lady-with-her-dogs.jpg');
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: left;
+}
+.hero__container .content{
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(73, 73, 73);
+    background-color: rgb(255, 255, 255, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-left: 5px;
+}
+.hero__container .content a{
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    border: 2px solid rgb(1, 53, 1);
+    border-radius: 3px;
+    align-self: flex-start;
+    padding: 1% 30%;
 }
 /* .hero__container::before{
     position: absolute;
@@ -57,6 +78,26 @@ header .flex{
         display: block;
     }
     header nav{
+        display: none;
+    }
+    .hero__container{
+        background-image: none;
+        height: 150px;
+    }
+    .hero__container .content{
+        width: 100%;
+        background-color: none;
+    }
+    .hero__container .content h3{
+        margin-left: 5px;
+        font-weight: 900;
+    }
+    .hero__container .content a{
+        align-self: center;
+        text: "Discover local sitters";
+        padding: 1% 40%
+    }
+    .hero__container .content h1{
         display: none;
     }
 }
